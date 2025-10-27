@@ -8,7 +8,7 @@ const average = document.querySelector('.average-population');
 let res = 0;
 
 countries.forEach((country) => {
-  res += country.innerText.replaceAll(',', '') * 1;
+  res += parseInt(country.innerText.replaceAll(',', ''));
 });
 
 function numberFormatter(number) {
