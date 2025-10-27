@@ -1,0 +1,2 @@
+"use strict";var countries=document.querySelectorAll(".list__item .population"),total=document.querySelector(".total-population"),average=document.querySelector(".average-population"),res=0;function numberFormatter(e){return e.toLocaleString()}countries.forEach(function(e){var t=parseInt(e.innerText.replaceAll(",",""));isNaN(t)||(res+=t)}),total.innerText=numberFormatter(res),average.innerText=numberFormatter(Math.floor(res/countries.length));
+//# sourceMappingURL=js_get_data_DOM.a365d15a.js.map
